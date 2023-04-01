@@ -1,0 +1,78 @@
+.boxes {
+  width: 100px;
+  height: 100px;
+  border: solid;
+  border-color: white;
+  margin: 10px;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes:hover {
+  box-shadow: 3px 5px #888888;
+  -webkit-transition: box-shadow 0.7s;
+  -moz-transition: box-shadow 0.7s;
+  transition: box-shadow 0.7s;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 110px;
+  /* border: solid; */
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 3rem;
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 2rem;
+  color: red;
+  position: relative;
+  top: -450px;
+  visibility: hidden;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_1,
+.btn_2 {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  border: solid;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
