@@ -8,43 +8,45 @@ function App() {
         <p className="head">Tic - Tac - Toe</p>
       </div>
 
-      <div class="container">
-        <div class="row row_1">
-          <diV class="boxes box_1" onClick={() => main(0)}>
+      <div className="container">
+        <div className="row row_1">
+          <div className="boxes box_1" onClick={() => main(0)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_2" onClick={() => main(1)}>
+          </div>
+          <div className="boxes box_2" onClick={() => main(1)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_3" onClick={() => main(2)}>
+          </div>
+          <div className="boxes box_3" onClick={() => main(2)}>
             <h1 className="h_tag"></h1>
-          </diV>
+          </div>
         </div>
 
-        <div class="row row_2">
-          <diV class="boxes box_4" onClick={() => main(3)}>
+        <div className="row row_2">
+          <div className="boxes box_4" onClick={() => main(3)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_5" onClick={() => main(4)}>
+          </div>
+          <div className="boxes box_5" onClick={() => main(4)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_6" onClick={() => main(5)}>
+          </div>
+          <div className="boxes box_6" onClick={() => main(5)}>
             <h1 className="h_tag"></h1>
-          </diV>
+          </div>
         </div>
 
-        <div class="row row_3">
-          <diV class="boxes box_7" onClick={() => main(6)}>
+        <div className="row row_3">
+          <div className="boxes box_7" onClick={() => main(6)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_8" onClick={() => main(7)}>
+          </div>
+          <div className="boxes box_8" onClick={() => main(7)}>
             <h1 className="h_tag"></h1>
-          </diV>
-          <diV class="boxes box_9" onClick={() => main(8)}>
+          </div>
+          <div className="boxes box_9" onClick={() => main(8)}>
             <h1 className="h_tag"></h1>
-          </diV>
+          </div>
         </div>
       </div>
+
+      
 
       <div className="winner">
         <h1 className="winner_tag">Ayush kathayat.</h1>
@@ -93,6 +95,7 @@ function main(index) {
   const winner = document.querySelector(".winner");
 
   // possible winning combinations
+    // if no one wins
 
   // possiblitity 1
   if (
@@ -229,6 +232,26 @@ function main(index) {
       winner.classList.toggle("visible");
     }
   }
+
+  if (
+    h_tags[0].innerHTML !== "" &&
+    h_tags[1].innerHTML !== "" &&
+    h_tags[2].innerHTML !== "" &&
+    h_tags[3].innerHTML !== "" &&
+    h_tags[4].innerHTML !== "" &&
+    h_tags[5].innerHTML !== "" &&
+    h_tags[6].innerHTML !== "" &&
+    h_tags[7].innerHTML !== "" &&
+    h_tags[8].innerHTML !== ""
+  ) {
+    console.log("no one wins");
+    contain.classList.toggle("hidden");
+    winne.innerHTML = "No one wins";
+    winner.classList.toggle("visible");
+  }
+
+
+
 }
 
 

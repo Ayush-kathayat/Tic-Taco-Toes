@@ -6,18 +6,22 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  height: fit-content;
 }
 
-p{
+/* body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  display: inline !important;
+} */
+
+.bookmark{
 
   background-color: #242424;
   color: white;
   text-align: center;
-  padding : 3px;
-}
+  transform : translate(0, -200px);
+} 
